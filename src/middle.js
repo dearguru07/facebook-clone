@@ -40,12 +40,18 @@ const ViratPost = (props) => {
         <p>{props.data.para}</p>
         <p>{props.data.story}</p>
         <img className="img-pic" src={props.data.postImg}></img>
+      <div className="like-count">
+      <h6>{props.data.like}</h6>
+      <h6>{props.data.like}</h6>
+      <h6>{props.data.like}</h6>
       </div>
+      </div>
+      
       <div className="like-btn">
       <div className="like-flex"><i class="bi bi-hand-thumbs-up l-icon"></i> <p>Like</p></div>
-      <div className="like-flex"><i class="bi bi-chat-left l-icon"></i><p>Comment</p></div>
-      <div className="like-flex"><i class="bi bi-whatsapp l-icon"></i><p>Send</p></div>
-      <div className="like-flex"><i class="bi bi-send "></i><p>Share</p></div>
+      <div className="like-flex"><i class="bi bi-chat-left l-icon"></i> <p>Comment</p></div>
+      <div className="like-flex"><i class="bi bi-send "></i> <p>Share</p></div>
+      <div className="like-flex"><i class="bi bi-whatsapp l-icon"></i> <p>Send</p></div>
       </div>
     </div>
   );
@@ -56,9 +62,11 @@ const Posts = () => {
     <div className="fb-posts">
       <ScrollBar />
       <Photos />
-      {array.map((x) => {
-        return <ViratPost data={x}/>;
-      })}
+    {
+      array.map((x)=>{
+        return <ViratPost data={x}/>
+      })
+    }
     </div>
   );
 };

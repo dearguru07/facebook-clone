@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 body {
   margin: 0;
   padding: 0;
@@ -91,7 +92,6 @@ body {
   height: auto;
   padding: 10px;
   margin-top: 70px;
-  /* box-shadow: 20px 20px 60px #bebebe7a, -20px -20px 60px #ffffff; */
 }
 .side-icon {
   display: flex;
@@ -200,6 +200,7 @@ body {
   box-shadow: 10px 20px 60px #bebebe6f, -20px -20px 60px #ffffff3c;
   margin: 29px;
   height: auto;
+  padding: 20px 5px;
 }
 .virat-prfl {
   width: 50%;
@@ -217,7 +218,7 @@ body {
   cursor: pointer;
   margin-left: 10px;
   font-size: 13px;
-  margin-top: -2px;
+  margin-top: -1px;
   color: rgb(0, 106, 255);
 }
 .virat-prfl > h4 {
@@ -319,3 +320,15 @@ body {
   /* margin-top: 49px; */
   margin: 7px;
 }
+.like-count{
+  display: flex;
+  align-items:start;
+  text-align:left;
+  justify-content:center;
+margin-bottom: -20px;
+}
+/* .like-count>h6{
+margin: 20px 50px;
+
+} */
+
